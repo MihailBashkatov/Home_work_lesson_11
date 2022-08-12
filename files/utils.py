@@ -43,7 +43,7 @@ def get_candidate_by_skills(candidate_skills, filename):
     candidate_list = []
     flag = False
     for candidate in filename:
-        if candidate_skills in candidate.skills.strip().lower():
+        if candidate_skills.strip().lower() in candidate.skills.strip().lower():
             candidate_list.append(candidate)
             flag = True
     if flag:
